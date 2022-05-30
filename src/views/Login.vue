@@ -123,7 +123,6 @@ export default {
     getRole(username) {
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/ld+json");
-    myHeaders.append("Access-Control-Allow-Origin", "*");
       var requestOptions = {
         method: "GET",
         headers: myHeaders,
@@ -146,7 +145,6 @@ export default {
     getIri(username) {
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/ld+json");
-  myHeaders.append("Access-Control-Allow-Origin", "*");
       var requestOptions = {
         method: "GET",
         headers: myHeaders,

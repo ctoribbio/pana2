@@ -205,8 +205,7 @@ export default {
         redirect: "follow",
       };
       
-      var bandera = await fetch
-        ("http://pana-api1.herokuapp.com/api/admins?username=" + username,
+      var bandera = await fetch("http://pana-api1.herokuapp.com/api/admins?username=" + username,
         requestOptions
       )
         .then((response) => response.text())

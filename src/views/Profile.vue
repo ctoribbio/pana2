@@ -169,8 +169,7 @@ export default {
         redirect: "follow",
       };
 
-      fetch
-        ("http://pana-api1.herokuapp.com" + localStorage.getItem("username"),
+      fetch("http://pana-api1.herokuapp.com" + localStorage.getItem("username"),
         requestOptions
       )
         .then((response) => response.text())

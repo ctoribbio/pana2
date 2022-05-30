@@ -131,7 +131,7 @@ export default {
       };
 
       fetch(
-        ("http://pana-api1.herokuapp.com/api/admins?username=" + username,
+        "http://pana-api1.herokuapp.com/api/admins?username=" + username,
         requestOptions
       )
         .then((response) => response.text())
@@ -154,7 +154,7 @@ export default {
       };
 
       fetch(
-        ("http://pana-api1.herokuapp.com/api/admins?username=" + username,
+        "http://pana-api1.herokuapp.com/api/admins?username=" + username,
         requestOptions
       )
         .then((response) => response.text())

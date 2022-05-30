@@ -294,7 +294,7 @@ export default {
         .catch((error) => console.log("error", error));
     },
     fetchAddress() {
-      //https://nominatim.openstreetmap.org/search.php?q=paseo+de+zorrilla+30&format=json
+      //ht tps://nominatim.openstreetmap.org/search.php?q=paseo+de+zorrilla+30&format=json
 
       if (document.getElementById("direccion") != null) {
         console.log("Aqui ");

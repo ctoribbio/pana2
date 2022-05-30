@@ -161,7 +161,7 @@ export default {
         redirect: "follow",
       };
 
-      fetch("http://localhost:8000/api/companies", requestOptions)
+      fetch("http://pana-api1.herokuapp.com/api/companies", requestOptions)
         .then((response) => response.text())
         .then((result) => this.getCompanies(JSON.parse(result)))
         .catch((error) => console.log("error", error));
@@ -225,7 +225,7 @@ export default {
           redirect: "follow",
         };
 
-        fetch("http://localhost:8000/api/companies", requestOptions)
+        fetch("http://pana-api1.herokuapp.com/api/companies", requestOptions)
           .then((response) => response.text())
           .then((result) => this.processResult(JSON.parse(result)))
           .catch((error) => this.processResult(JSON.parse(error)));

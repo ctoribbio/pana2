@@ -86,7 +86,7 @@ export default {
         redirect: "follow",
       };
 
-      fetch("http://localhost:8000/api/companies", requestOptions)
+      fetch("http://pana-api1.herokuapp.com/api/companies", requestOptions)
         .then((response) => response.text())
         .then((result) => {
           class Company {
@@ -146,7 +146,7 @@ export default {
           redirect: "follow",
         };
 
-        fetch("http://localhost:8000" + iri, requestOptions)
+        fetch("http://pana-api1.herokuapp.com" + iri, requestOptions)
           .then((response) => response.text())
           .then((result) => {
             console.log(result);

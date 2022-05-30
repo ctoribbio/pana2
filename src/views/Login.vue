@@ -92,7 +92,7 @@ export default {
         },
       };
 
-      fetch("http://localhost:8000/api/login_check", requestOptions)
+      fetch("http://pana-api1.herokuapp.com/api/login_check", requestOptions)
         .then((response) => response.text())
         .then((result) => {
           if (JSON.parse(result)["token"] != undefined) {

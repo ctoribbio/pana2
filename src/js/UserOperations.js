@@ -15,7 +15,7 @@ function login(username, password) {
     }
 
     var failure;
-    fetch("http://localhost:8000/api/login_check", requestOptions)
+    fetch("http://pana-api1.herokuapp.com/api/login_check", requestOptions)
         .then(response => response.text())
         .then(result =>localStorage.setItem("token",JSON.parse(result)["token"]))
         .catch(error => failure = error)

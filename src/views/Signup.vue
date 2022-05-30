@@ -205,7 +205,7 @@ export default {
         redirect: "follow",
       };
       
-      var bandera = await fetch("http://pana-api1.herokuapp.com/api/admins?username=" + username,
+      var bandera = await fetch("https://pana-api1.herokuapp.com/api/admins?username=" + username,
         requestOptions
       )
         .then((response) => response.text())
@@ -259,7 +259,7 @@ export default {
           redirect: "follow",
         };
 
-        fetch("http://pana-api1.herokuapp.com/api/admins/register", requestOptions)
+        fetch("https://pana-api1.herokuapp.com/api/admins/register", requestOptions)
           .then((response) => response.text())
           .then((result) => {
             try{

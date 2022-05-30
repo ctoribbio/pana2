@@ -86,7 +86,7 @@ export default {
         redirect: "follow",
       };
 
-      fetch("http://pana-api1.herokuapp.com/api/companies", requestOptions)
+      fetch("https://pana-api1.herokuapp.com/api/companies", requestOptions)
         .then((response) => response.text())
         .then((result) => {
           class Company {
@@ -146,7 +146,7 @@ export default {
           redirect: "follow",
         };
 
-        fetch("http://pana-api1.herokuapp.com" + iri, requestOptions)
+        fetch("https://pana-api1.herokuapp.com" + iri, requestOptions)
           .then((response) => response.text())
           .then((result) => {
             console.log(result);
@@ -169,7 +169,7 @@ export default {
         redirect: "follow",
       };
 
-      fetch("http://pana-api1.herokuapp.com" + localStorage.getItem("username"),
+      fetch("https://pana-api1.herokuapp.com" + localStorage.getItem("username"),
         requestOptions
       )
         .then((response) => response.text())

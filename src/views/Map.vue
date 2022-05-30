@@ -123,7 +123,7 @@ export default {
         redirect: "follow",
       };
 
-      fetch("http://pana-api1.herokuapp.com/api/companies?sector=", requestOptions)
+      fetch("https://pana-api1.herokuapp.com/api/companies?sector=", requestOptions)
         .then((response) => response.text())
         .then((result) => {
           console.log(JSON.parse(result)["hydra:member"]);
@@ -149,7 +149,7 @@ export default {
         redirect: "follow",
       };
 
-      fetch("http://pana-api1.herokuapp.com/api/companies?sector=" + opt, requestOptions)
+      fetch("https://pana-api1.herokuapp.com/api/companies?sector=" + opt, requestOptions)
         .then((response) => response.text())
         .then((result) => {
           this.getCompanies(JSON.parse(result));

@@ -92,7 +92,7 @@ export default {
         },
       };
 
-      fetch("http://pana-api1.herokuapp.com/api/login_check", requestOptions)
+      fetch("https://pana-api1.herokuapp.com/api/login_check", requestOptions)
         .then((response) => response.text())
         .then((result) => {
           if (JSON.parse(result)["token"] != undefined) {
@@ -131,7 +131,7 @@ export default {
       };
 
       fetch(
-        "http://pana-api1.herokuapp.com/api/admins?username=" + username,
+        "https://pana-api1.herokuapp.com/api/admins?username=" + username,
         requestOptions
       )
         .then((response) => response.text())
@@ -154,7 +154,7 @@ export default {
       };
 
       fetch(
-        "http://pana-api1.herokuapp.com/api/admins?username=" + username,
+        "https://pana-api1.herokuapp.com/api/admins?username=" + username,
         requestOptions
       )
         .then((response) => response.text())

@@ -44,7 +44,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/admins/register", requestOptions)
+fetch("http://pana-api1.herokuapp.com/api/admins/register", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));

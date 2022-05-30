@@ -107,9 +107,9 @@ export default {
           if (failure != true) {
             setTimeout(function () {
               if (localStorage.getItem("role") == "ROLE_USER") {
-                location.replace("http://127.0.0.1:8080/map");
+                location.replace("https://pana2.vercel.app/map");
               } else {
-                location.replace("http://127.0.0.1:8080/admin");
+                location.replace("https://pana2.vercel.app/admin");
               }
             }, 1000);
           }
@@ -131,7 +131,7 @@ export default {
       };
 
       fetch(
-        "http://localhost:8000/api/admins?username=" + username,
+        ("http://pana-api1.herokuapp.com/api/admins?username=" + username,
         requestOptions
       )
         .then((response) => response.text())
@@ -154,7 +154,7 @@ export default {
       };
 
       fetch(
-        "http://localhost:8000/api/admins?username=" + username,
+        ("http://pana-api1.herokuapp.com/api/admins?username=" + username,
         requestOptions
       )
         .then((response) => response.text())

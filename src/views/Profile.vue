@@ -170,7 +170,7 @@ export default {
       };
 
       fetch(
-        "http://localhost:8000" + localStorage.getItem("username"),
+        ("http://pana-api1.herokuapp.com" + localStorage.getItem("username"),
         requestOptions
       )
         .then((response) => response.text())

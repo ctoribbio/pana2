@@ -186,7 +186,7 @@ export default {
         }
       } else if (json["code"] != undefined && json["code"] == 401) {
         setTimeout(function () {
-          location.replace("http://127.0.0.1:8080/login");
+          location.replace("https://pana2.vercel.app/login");
         }, 1000);
       }
     },

@@ -23,7 +23,7 @@ function login(username, password) {
     if(failure == null){
         
         setTimeout(function () {
-            location.replace("http://localhost:8080/map")
+            location.replace("location.replace("https://pana2.vercel.app/map")
         }, 1000);
     }
 }

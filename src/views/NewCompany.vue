@@ -181,7 +181,7 @@ export default {
         }
       } else if (json["code"] != undefined && json["code"] == 401) {
         setTimeout(function () {
-          location.replace("http://127.0.0.1:8080/login");
+          location.replace("https://pana2.vercel.app/login");
         }, 1000);
       }
     },
@@ -249,7 +249,7 @@ export default {
         if (result["code"] == 401) {
           alert("Su sesión ha expirado! Inicie sesion de nuevo");
           setTimeout(function () {
-            location.replace("http://127.0.0.1:8080/login");
+            location.replace("https://pana2.vercel.app/login");
           }, 5000);
         }
       }
@@ -261,7 +261,7 @@ export default {
           this.updateUser();
           alert("Su empresa ya esta disponible en el Servidor");
           setTimeout(function () {
-            location.replace("http://127.0.0.1:8080/map");
+            location.replace("https://pana2.vercel.app/map");
           }, 1500);
         }
       }
@@ -286,7 +286,7 @@ export default {
       };
 
       fetch(
-        "http://localhost:8000" + localStorage.getItem("username"),
+        ("http://pana-api1.herokuapp.com" + localStorage.getItem("username"),
         requestOptions
       )
         .then((response) => response.text())

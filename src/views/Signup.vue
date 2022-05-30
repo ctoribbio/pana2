@@ -206,7 +206,7 @@ export default {
       };
       
       var bandera = await fetch(
-        "http://localhost:8000/api/admins?username=" + username,
+        ("http://pana-api1.herokuapp.com/api/admins?username=" + username,
         requestOptions
       )
         .then((response) => response.text())

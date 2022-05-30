@@ -1,0 +1,79 @@
+.control{
+    display: flex;
+    flex-direction: column;
+}
+.table{
+    border: 2px solid grey;
+
+}
+.botonb{
+    width:10%
+}
+.borrar{
+width: 100%;
+padding: 0px !important;
+}
+.material-symbols-outlined{
+    font-size: 34px !important;
+
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    padding:5px !important;
+}
+.right{
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    align-items: right;
+
+    padding:5px !important;
+}
+.left{
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+    vertical-align: middle !important;
+    padding:5px !important;
+}
+.textbox
+{
+    height:50px;
+    font-size:14pt;
+    border-radius : 5px;
+    text-align: center;
+    color:black;
+
+}
+.search{
+    width: 100%
+}
+.boton{
+    height:50px;
+    font-size:14pt;
+    width:50%
+}
+.map{
+    height:540px;
+}
+.resultado{
+background-color: white;
+padding_: 2px;
+border: 1px solid grey;
+height: 25px;
+font-size: 15px;
+}
+
+.results{
+    padding: 2px;
+    
+}
+.filter{
+    height: 25px;
+}
+.texto{
+    margin-bottom: 0px;
+}

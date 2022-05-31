@@ -17,7 +17,7 @@
           <td class=" item">{{ user.dni }}</td>
           <td class=" item">{{ user.telf }}</td>
           <td class=" item">{{ user.email }}</td>
-          <td class=" item"><span v-on:="colorAll()" v-bind:id ="user.username" class=" bool material-symbols-outlined">{{ this.getBool(user.bool) }}</span></td>
+          <td class=" item"><span v-bind:id ="user.username" class=" bool material-symbols-outlined">{{ this.getBool(user.bool) }}</span></td>
           <td class="right  botonb">
             <button
               class="btn btn-danger borrar "
@@ -76,7 +76,7 @@ export default {
       companies: new Array(),
     };
   },
-  mounted() {
+  created() {
      if(localStorage.getItem("role")!="ROLE_ADMIN"){
        location.replace("/map");
      }
@@ -100,7 +100,7 @@ export default {
 
     this.fillUsers();
     this.fillCompanies();
-    
+    this.colorAll();
   },
   methods: {
     colorAll(){
@@ -204,7 +204,6 @@ export default {
               json[i]["lng"],
               x
             );
-            console.log(x);
             this.companies.push(c);
           }
         })

@@ -126,7 +126,6 @@ export default {
       fetch("https://pana-api1.herokuapp.com/api/companies?sector=", requestOptions)
         .then((response) => response.text())
         .then((result) => {
-          console.log(JSON.parse(result)["hydra:member"]);
           if (JSON.parse(result)["hydra:member"] != undefined) {
             var json = JSON.parse(result)["hydra:member"];
             for (var i = 0; i < json.length; i++) {

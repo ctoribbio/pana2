@@ -189,8 +189,6 @@ export default {
       return latLng(lat, lng);
     },
     send() {
-      console.log(this.lat);
-      console.log(this.lng);
 
       document.forms[0].addEventListener("submit", (e) => {
         e.preventDefault();
@@ -296,7 +294,6 @@ export default {
       //ht tps://nomina tim.openstreetmap.org/search.php?q=paseo+de+zorrilla+30&format=json
 
       if (document.getElementById("direccion") != null) {
-        console.log("Aqui ");
         var search = document.getElementById("direccion").value;
         var s = search.replace(/\s/g, "+");
 
@@ -315,7 +312,6 @@ export default {
           .then((result) => this.processAddress(JSON.parse(result)))
           .catch((error) => console.log("error", error));
       } else {
-        console.log("Hola");
       }
     },
     processClick(result) {
@@ -331,8 +327,6 @@ export default {
       this.lat = result.lat;
       this.lng = result.lon;
 
-      console.log(result.lat);
-      console.log(result.lon);
     },
   },
 };

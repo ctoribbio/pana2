@@ -124,12 +124,6 @@ export default {
         !this.telefonoV(telefono) ||
         !this.usernameV(username)
       ) {
-        console.log(this.checkName(username));
-        console.log(this.nif(dni));
-        console.log(this.passwordV(password, password2));
-        console.log(this.checkName(username));
-        console.log(this.checkName(username));
-
         return false;
       } else {
         return true;
@@ -210,7 +204,6 @@ export default {
       )
         .then((response) => response.text())
         .then((result) => {
-          console.log(JSON.parse(result)["hydra:member"].length);
           if (!JSON.parse(result)["hydra:member"].length == 0) {
               this.error = "Ya existe un usuario con ese nombre";
               bandera = true

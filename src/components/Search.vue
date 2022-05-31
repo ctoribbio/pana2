@@ -43,9 +43,6 @@ export default{
         }
     },
     methods: {
-      processClick(){
-        console.log(this.$parent.$parent.$parent)
-      },
     updateCenter(lat,lng) {
       this.center = latLng(lat,lng)
     },
@@ -90,7 +87,6 @@ export default{
             .then((response) => response.text())
             .then((result) => {
               searchData.value = JSON.parse(result);
-              console.log(searchData.value);
             })
             .catch((error) => console.log("error", error));
         } else {

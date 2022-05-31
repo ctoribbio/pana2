@@ -147,7 +147,6 @@ export default {
 
           var json = JSON.parse(result)["hydra:member"];
           for (var i = 0; i < json.length; i++) {
-            console.log("a");
             var a = new Admin(
               json[i]["@id"],
               json[i]["username"],
@@ -191,15 +190,10 @@ export default {
           var json = JSON.parse(result)["hydra:member"];
           for (var i = 0; i < json.length; i++) {
             var x;
-            console.log("hola")
-            console.log(this.users.length)
             for (var j = 0; j < this.users.length; j++) {
-              console.log(json[i]["username"])
               if (this.users[j].iri == json[i]["username"]) {
                 x = this.users[j].username;
                 break;
-              }else{
-                console.log(this.users[j].iri)
               }
             }
             var c = new Company(
@@ -218,7 +212,6 @@ export default {
     deleteCompany(event) {
       if (confirm("Estas seguro de querer borrar esta compañia?")) {
         var iri = this.companies[event.target.id].iri;
-        console.log(iri);
         var myHeaders = new Headers();
         myHeaders.append(
           "Authorization",
@@ -234,7 +227,6 @@ export default {
         fetch("https://pana-api1.herokuapp.com" + iri, requestOptions)
           .then((response) => response.text())
           .then((result) => {
-            console.log(result);
             location.reload();
           })
           .catch((error) => console.log("error", error));
@@ -243,7 +235,6 @@ export default {
     deleteUser(event) {
       if (confirm("Estas seguro de borrar este usuario?")) {
         var iri = this.users[event.target.id].iri;
-        console.log(event.target.id)
         if(iri == localStorage.getItem("username")) {
           alert("No se puede eliminar el usuario administrador");
         }else{
@@ -263,7 +254,6 @@ export default {
         fetch("https://pana-api1.herokuapp.com" + iri, requestOptions)
           .then((response) => response.text())
           .then((result) => {
-            console.log(result);
             location.reload();
           })
           .catch((error) => console.log("error", error));

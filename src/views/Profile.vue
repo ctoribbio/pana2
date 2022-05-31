@@ -133,7 +133,6 @@ export default {
     deleteCompany(event) {
       if (confirm("Estas seguro de que quieres borrar esta compañia?")) {
         var iri = this.companies[event.target.id].iri;
-        console.log(iri);
         var myHeaders = new Headers();
         myHeaders.append(
           "Authorization",
@@ -149,7 +148,6 @@ export default {
         fetch("https://pana-api1.herokuapp.com" + iri, requestOptions)
           .then((response) => response.text())
           .then((result) => {
-            console.log(result);
             location.reload();
           })
           .catch((error) => console.log("error", error));
@@ -184,7 +182,6 @@ export default {
           }
 
           var json = JSON.parse(result);
-          console.log(result);
           this.user = new User(
             json["username"],
             json["dni"],

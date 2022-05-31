@@ -77,6 +77,8 @@ export default {
     };
   },
   created() {
+    this.users = [];
+    this.companies = []
      if(localStorage.getItem("role")!="ROLE_ADMIN"){
        location.replace("/map");
      }

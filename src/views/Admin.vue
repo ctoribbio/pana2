@@ -204,6 +204,7 @@ export default {
               json[i]["lng"],
               x
             );
+            console.log(x);
             this.companies.push(c);
           }
         })

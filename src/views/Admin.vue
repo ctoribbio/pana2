@@ -77,6 +77,9 @@ export default {
     };
   },
   created() {
+     if(localStorage.getItem("role")!="ROLE_ADMIN"){
+       location.replace("/map");
+     }
     var tag = document.createElement("link");
     tag.setAttribute("rel", "stylesheet");
     tag.setAttribute(

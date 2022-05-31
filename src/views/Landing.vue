@@ -138,6 +138,7 @@ import * as JS from "../assets/js/landing/scripts.js";
 export default {
   name: "Home",
   mounted() {
+    localStorage.clear();
     var tag = document.createElement("link");
     tag.rel = "stylesheet";
     tag.href =

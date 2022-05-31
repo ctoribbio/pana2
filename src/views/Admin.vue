@@ -189,9 +189,10 @@ export default {
             }
           }
           var json = JSON.parse(result)["hydra:member"];
-          console.log(json);
           for (var i = 0; i < json.length; i++) {
             var x;
+            console.log("hola")
+            console.log(this.users.length)
             for (var j = 0; j < this.users.length; j++) {
               console.log(json[i]["username"])
               if (this.users[j].iri == json[i]["username"]) {

@@ -52,8 +52,7 @@
           <p class="text-white-75 mb-5">
             PANA o Plataforma de Ayuda a Nuevos Autonomos es el punto de reunion
             de empresarios emergentes, con una base de datos poblada de
-            empresas, no caerás en la desinformación, abriendo tu negocio en un
-            lugar no apropiado
+            empresas, no caerás en la desinformación, abriendo tu negocio en el lugar mas apropiado.
           </p>
           <a class="btn btn-primary btn-xl" href="/signup">Registrate Ahora</a>
         </div>

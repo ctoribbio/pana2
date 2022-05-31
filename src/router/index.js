@@ -6,7 +6,6 @@ import Map from "../views/Map.vue";
 import NewCompany from "../views/NewCompany.vue";
 import Admin from "../views/Admin.vue";
 import Main from "../views/Main.vue";
-
 import Landing from "../views/Landing.vue";
 import Profile from "../views/Profile.vue";
 

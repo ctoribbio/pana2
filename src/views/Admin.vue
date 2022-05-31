@@ -190,9 +190,12 @@ export default {
           for (var i = 0; i < json.length; i++) {
             var x;
             for (var j = 0; j < this.users.length; j++) {
+              console.log(json[i]["username"])
               if (this.users[j].iri == json[i]["username"]) {
                 x = this.users[j].username;
                 break;
+              }else{
+                console.log(this.users[j].iri)
               }
             }
             var c = new Company(

@@ -76,7 +76,7 @@ export default {
       companies: new Array(),
     };
   },
-  created() {
+  mounted() {
     this.users = [];
     this.companies = []
      if(localStorage.getItem("role")!="ROLE_ADMIN"){

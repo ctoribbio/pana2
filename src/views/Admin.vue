@@ -76,7 +76,7 @@ export default {
       companies: new Array(),
     };
   },
-  created() {
+  mounted() {
      if(localStorage.getItem("role")!="ROLE_ADMIN"){
        location.replace("/map");
      }
